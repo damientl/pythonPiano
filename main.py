@@ -6,7 +6,7 @@ from piano_lib.audioPlayer import AudioPlayer
 def play_intervals(filename):
 
     intervals = readlines(filename)
-    audios = ('piano.mp3', 'piano2.mp3', 'in.mp3', 'out.mp3', 'hold.mp3')
+    audios = ('piano.mp3', 'piano2.mp3', 'in.mp3', 'out.mp3', 'hold.mp3', 'assobio-fim.mp3')
 
     audio_player = AudioPlayer(audios)
     interval_player = IntervalPlayer(intervals, audio_player)
