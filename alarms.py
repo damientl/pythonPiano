@@ -20,7 +20,7 @@ def getTimeToTrigger(int1Time):
     return datetime.datetime.now().replace(hour=intHour, minute=intMin, second=0, microsecond=0)
 
 if __name__ == '__main__':
-    intervals = readlines("int_alarms.txt")
+    intervals = readlines("program/alarms/int_alarms.txt")
     audios = ('piano.mp3', 'piano2.mp3')
 
     print(f"interval len: { len(intervals) }")
