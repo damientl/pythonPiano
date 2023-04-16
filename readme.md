@@ -11,3 +11,10 @@ updated lib:
 pip install PyObjC
 https://www.youtube.com/watch?v=WJ3-F02-F_Y
 pip install playsound    
+
+---
+
+program data structure:
+<a>,<b>
+a - time to before playing 'b'
+b - sound index
