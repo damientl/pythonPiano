@@ -1,1 +1,2 @@
-pygame
+playsound==1.3.0
+pyobjc==8.5
