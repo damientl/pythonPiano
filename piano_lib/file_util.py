@@ -4,7 +4,7 @@ import os
 import glob
 
 
-def readlines(file_name="intervals.csv"):
+def readlines(file_name):
     with open(file_name) as debts:
         return debts.readlines()
 
@@ -15,6 +15,12 @@ def cleanFolder():
     print(output)
     for filename in output:
         os.remove(filename)
+
+def listFilesOrderByName(folder_path):
+    files = os.listdir(folder_path)
+    files.sort()
+    files = [f for f in files if not f.startswith('.') and os.path.isfile(os.path.join(folder_path, f))]
+    return files
 
 
 def load_file_as_string(file_name):
